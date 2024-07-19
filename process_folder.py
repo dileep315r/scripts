@@ -2,7 +2,7 @@ import os
 import subprocess
 import argparse
 
-
+# python3 process_folder.py -folder ~/Downloads/print -command 'lpr -U dileepkusuma -o sides=two-sided-long-edge'
 def parse_args():
     parser = argparse.ArgumentParser(
         description="Generate a garbage file of the specified size."
