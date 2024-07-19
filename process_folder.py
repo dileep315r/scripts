@@ -2,7 +2,6 @@ import os
 import subprocess
 import argparse
 
-# python3 process_folder.py -folder ~/Downloads/print -command 'lpr -U dileepkusuma -o sides=two-sided-long-edge'
 def parse_args():
     parser = argparse.ArgumentParser(
         description="Generate a garbage file of the specified size."
@@ -43,7 +42,7 @@ def process_folder(folder_path, command):
                 print(f"Error processing file {file_name}: {e}")
 
 
-# Example usage:
+# Example usage: python3 process_folder.py -folder ~/Downloads/print -command 'lpr -U dileepkusuma -o sides=two-sided-long-edge'
 if __name__ == "__main__":
     args = parse_args()
     folder = validate_folder(args.folder)
